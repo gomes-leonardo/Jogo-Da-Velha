@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* Altura e largura fixa de 100px
+>> Display inline-block, para ficar os quadrados em linha, não para baixo */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #CCE6F4;
+    border: 1px solid #2E6171;
+    display: inline-block;
+}
+
+.o {
+    /* Position relative, agora o absoluto tem como referência o O, e não o BODY */
+    position: relative;
+}
+
+
+/* After e Before, maneira de editar diretamente sem 'SUJAR' o HTML. Ícones pegados diretamente do emojipedia.com */
+
+.o:after {
+    position: absolute;
+    content: "\1F535";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+}
+
+.x {
+    position: relative;
+}
+
+.x:after {
+    position: absolute;
+    content: "\274C";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+}
